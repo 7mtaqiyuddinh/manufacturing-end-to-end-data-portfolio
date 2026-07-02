@@ -33,3 +33,7 @@ Thumbs.db
 
 # Study/learning notes
 .study/
+
+python/_create_eda_notebook.py
+python/_create_cleaning_notebook.py
+
