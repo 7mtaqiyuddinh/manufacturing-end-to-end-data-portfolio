@@ -217,8 +217,21 @@ Untuk memudahkan visualisasi di Power BI dan menghindari query yang berulang, ka
 
 ---
 
-### 🚀 Cara Menjalankan Berkas SQL
+### 🚀 Uji Coba Interaktif via Jupyter Notebook
+Untuk mempermudah pengujian tanpa perlu menginstalasikan RDBMS besar (seperti PostgreSQL/MySQL), kami menyediakan notebook interaktif **[sql_analysis.ipynb](sql_analysis.ipynb)** di folder ini.
+
+Notebook ini akan:
+1. Membuat database SQLite lokal (`production.db`) secara otomatis.
+2. Membaca dan menerapkan skema dari [schema.sql](schema.sql).
+3. Mengisi data dari file CSV bersih yang berada di folder `data/cleaned/`.
+4. Meregistrasikan fungsi kustom **`STDDEV`** ke SQLite3 melalui Python.
+5. Membangun views dari [views.sql](views.sql).
+6. Menjalankan query analisis dan langsung menampilkan tabel outputnya.
+
+### 💻 Cara Alternatif Menjalankan Berkas SQL Klasik
+Jika Anda ingin menjalankan berkas SQL secara manual di DBMS pilihan Anda:
 1. Eksekusi skema database terlebih dahulu: [schema.sql](schema.sql)
 2. Load data simulasi ke dalam tabel: [load_data.sql](load_data.sql)
 3. Buat database views analitik: [views.sql](views.sql)
 4. Jalankan script analisis analitik: [analysis.sql](analysis.sql)
+
