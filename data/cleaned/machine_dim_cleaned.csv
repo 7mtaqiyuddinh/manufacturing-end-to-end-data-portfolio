@@ -1,0 +1,16 @@
+machine_id,machine_name,machine_type,purchase_year,status
+1,SMT-01,SMT Placement,2018,Active
+2,SMT-02,SMT Placement,2021,Active
+3,SMT-03,SMT Placement,2023,Active
+4,WAVE-01,Wave Soldering,2017,Active
+5,WAVE-02,Wave Soldering,2020,Active
+6,WAVE-03,Wave Soldering,2022,Active
+7,AOI-01,Inspection,2019,Active
+8,AOI-02,Inspection,2023,Active
+9,ICT-01,Testing,2018,Active
+10,ICT-02,Testing,2021,Active
+11,REFLOW-01,Reflow Oven,2016,Active
+12,REFLOW-02,Reflow Oven,2020,Active
+13,REFLOW-03,Reflow Oven,2024,Active
+14,PRESS-01,Press,2019,Active
+15,PACK-01,Packaging,2022,Active

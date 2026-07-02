@@ -1,0 +1,6 @@
+product_id,product_name,category,unit_cost
+1,PCB Assembly,Assembly,25000
+2,Sensor Module,Component,45000
+3,Power Supply Unit,Power,78000
+4,LED Panel,Display,35000
+5,Control Board,Controller,120000

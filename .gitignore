@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Power BI temp files
+*.pbix.tmp
+
+# Data files (uncomment if you don't want to track data)
+# data/raw/
+# data/cleaned/
+
+# Study/learning notes
+.study/

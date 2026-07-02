@@ -1,0 +1,4 @@
+shift_id,shift_name,start_time,end_time
+1,Shift Pagi,06:00,14:00
+2,Shift Siang,14:00,22:00
+3,Shift Malam,22:00,06:00
