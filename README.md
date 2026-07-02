@@ -84,4 +84,15 @@ Berdasarkan analisis data terpadu, ditemukan beberapa fakta operasional kritis b
 ---
 
 ## 🖥️ Visualisasi Dashboard Power BI
-Panduan lengkap untuk mereplikasi visualisasi interaktif kami, termasuk skema relasi dan visualisasi per halaman, dapat diakses di **[Power BI Guide](powerbi/powerbi_guide.md)**.
+
+Berikut adalah tampilan interaktif dari dashboard Power BI:
+
+### Halaman 1: Ringkasan Performa Produksi (Executive Summary)
+![Dashboard Page 1](images/dashboard_page1.png)
+
+### Halaman 2: Analisis Detail Downtime & Kualitas Produk (Defect)
+![Dashboard Page 2](images/dashboard_page2.png)
+
+> [!NOTE]
+> File mentah Power BI (`.pbix`) dapat diakses di folder [powerbi/dashboard.pbix](powerbi/dashboard.pbix), dan file laporan lengkap format PDF dapat diunduh di [powerbi/dashboard.pdf](powerbi/dashboard.pdf).
+
