@@ -35,7 +35,9 @@ Dalam beberapa bulan terakhir H2 2024, manajemen mendapati adanya tren penurunan
 │   ├── load_data.sql             # Panduan import csv & DML insert data dimensi
 │   ├── views.sql                 # DDL views analisis terintegrasi untuk Power BI
 │   ├── analysis.sql              # 15 query analisis SQL tingkat lanjut (CTE, Window Functions, Rank)
+│   ├── sql_analysis.ipynb        # Uji coba interaktif 15 query & 4 views via SQLite3 & Pandas
 │   └── README.md                 # Dokumentasi detail skema, kamus data & showcase SQL
+
 ├── powerbi/
 │   ├── dashboard.pbix            # File mentah Power BI Dashboard
 │   └── dashboard.pdf             # Ekspor PDF dari Dashboard
@@ -61,13 +63,14 @@ Di notebook [eda.ipynb](python/eda.ipynb), dilakukan analisis korelasi dan visua
 * **Scatter Plot**: Menghitung korelasi negatif antara downtime mesin dan jumlah output yang dihasilkan.
 
 ### 3. Analisis Relasional (SQL)
-Menggunakan database relasional dengan rancangan **Star Schema** (terdiri dari 1 tabel fakta `production_fact` dan 4 tabel dimensi `line_dim`, `machine_dim`, `product_dim`, dan `shift_dim`). Dokumentasi lengkap skema, kamus data, dan showcase query analitis dapat dilihat pada **[Dokumentasi SQL Portfolio](sql/README.md)**. 
+Menggunakan database relasional dengan rancangan **Star Schema** (terdiri dari 1 tabel fakta `production_fact` dan 4 tabel dimensi `line_dim`, `machine_dim`, `product_dim`, dan `shift_dim`). Dokumentasi lengkap skema, kamus data, dan showcase query analitis dapat dilihat pada **[Dokumentasi SQL Portfolio](sql/README.md)**.
 
-Pada file [analysis.sql](sql/analysis.sql) dan [views.sql](sql/views.sql), diimplementasikan teknik analisis relasional seperti:
+Seluruh DDL skema, views, dan 15 query analisis dapat dieksekusi secara interaktif melalui notebook **[sql_analysis.ipynb](sql/sql_analysis.ipynb)** menggunakan SQLite3 lokal. Teknik analisis relasional yang diuji meliputi:
 * **Window Functions (`SUM OVER`, `AVG OVER`)** untuk menghitung akumulasi total bulanan (*running total*) dan rata-rata bergerak 7 hari (*moving average*).
 * **Common Table Expressions (CTE)** untuk mengisolasi logika agregasi performa perpaduan Lini-Shift.
 * **LAG/LEAD** untuk menghitung analisis perubahan performa dari bulan ke bulan (*Month-on-Month growth*).
-* **Database Views** untuk memaketkan query analitis agar siap dikonsumsi oleh visualisasi Power BI.
+* **Database Views** (`views.sql`) untuk merangkum query analitis operasional, pemeliharaan mesin, dan defect cost finansial.
+
 
 
 ---
