@@ -80,8 +80,3 @@ Berdasarkan analisis data terpadu, ditemukan beberapa fakta operasional kritis b
 1. **P1 - Preventive Maintenance Terjadwal**: Fokus utama pada peremajaan suku cadang mesin tua (>5 tahun) untuk menekan downtime hingga 30%.
 2. **P1 - Optimalisasi Shift Malam**: Menambahkan rotasi supervisor senior ke shift malam serta menerapkan *fatigue management* (jeda istirahat berkala).
 3. **P2 - Pengetatan QC Control Board**: Memasang tim inspeksi khusus dan menerapkan metode *Statistical Process Control* (SPC) pada jalur perakitan Control Board.
-
----
-
-## 🖥️ Visualisasi Dashboard Power BI
-Panduan lengkap untuk mereplikasi visualisasi interaktif kami, termasuk skema relasi dan visualisasi per halaman, dapat diakses di **[Power BI Guide](powerbi/powerbi_guide.md)**.
