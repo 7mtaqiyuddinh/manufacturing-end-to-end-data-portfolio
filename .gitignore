@@ -34,4 +34,8 @@ Thumbs.db
 # Study/learning notes
 .study/
 
+# SQLite database
+sql/production.db
+
+
 
