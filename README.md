@@ -82,6 +82,8 @@ Berdasarkan analisis data terpadu, ditemukan beberapa fakta operasional kritis b
 2. **Defect Rate Tinggi pada Shift Malam**: Shift Malam memberikan kontribusi defect rate tertinggi (~5.1%), jauh di atas Shift Pagi (~3.2%). Diduga dipengaruhi oleh faktor kelelahan operator dan minimnya pengawasan.
 3. **Bottleneck pada Mesin Tua**: Mesin dengan usia pakai di atas 5 tahun (seperti `REFLOW-01` dan `WAVE-01`) menyumbang **65% dari total downtime pabrik**.
 4. **Control Board Masalah Utama QC**: Produk *Control Board* memiliki defect rate tertinggi sebesar **6.45%** (rata-rata produk lain hanya ~3%), yang berdampak signifikan pada kerugian finansial karena biaya per unitnya paling mahal (Rp 120.000).
+5. **Korelasi Negatif Downtime-Output**: Terdapat korelasi negatif yang signifikan antara downtime mesin dan output produksi — setiap peningkatan 10 menit downtime berkorelasi dengan penurunan **~3-5% output**, karena dampak waktu *warm-up* dan *re-setup* pasca-downtime.
+6. **Line A: Lini Kritis yang Menurun Tajam**: Meskipun Line A adalah lini dengan output tertinggi (~21% total output perusahaan), performanya menurun **~20% di bulan Desember** akibat masalah pada mesin SMT, berdampak pada kehilangan ~4% total output perusahaan.
 
 *Detail analisis mendalam dan rekomendasi taktis dapat dibaca pada dokumen:* **[Insights & Recommendations](insights_and_recommendations.md)**.
 
